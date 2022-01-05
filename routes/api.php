@@ -22,3 +22,10 @@ Route::post('/subject/store',[SubjectController::class, 'Store']);
 Route::get('/subject/edit/{id}',[SubjectController::class, 'SubEdit']);
 Route::post('/subject/update/{id}',[SubjectController::class, 'Update']);
 Route::get('/subject/delete/{id}',[SubjectController::class, 'Delete']);
+
+/// Section Routes 
+Route::get('/section',[SectionController::class, 'SectionIndex']);
+Route::post('/section/store',[SectionController::class, 'SectionStore']);
+Route::get('/section/edit/{id}',[SectionController::class, 'SectionEdit']);
+Route::post('/section/update/{id}',[SectionController::class, 'SectionUpdate']);
+Route::get('/section/delete/{id}',[SectionController::class, 'SectionDelete']);
